@@ -1,16 +1,16 @@
 #include <iostream>
 #include <thread>
+#include <string>
+
 #include "print.hpp"
 using namespace std;
 
 int main() {
     string msg = "Hello World!";
-    Print(msg);
+    PrintTitle(msg);
 
-    unsigned n = 0;
-    while(n < msg.size()) {
-        cout << msg[n++] << endl;
-    }
-    
+    DemoFctrl("./sampleText.txt");
+    DemoFStream("./sampleText.txt");
+
     return 0;
 }
